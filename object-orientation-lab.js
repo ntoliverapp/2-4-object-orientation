@@ -156,8 +156,20 @@ console.log(totalPopulation(states))
 */
 
 //Code Here
+const diet = {
+  carb: "carbOne",
+  fat: "fatOne",
+  protein: "proteinOne"
+}
 
+function ingredients(object) {
+  const {carb: carbTwo, fat: fatTwo, protein: proteinTwo} = object
+  var newArray = []
+  newArray.push(carbTwo, fatTwo, proteinTwo)
+  return newArray
+}
 
+console.log(ingredients(diet))
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
