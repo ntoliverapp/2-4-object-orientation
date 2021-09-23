@@ -231,7 +231,19 @@ console.log(tabby.catAge)
 */
 
 //Code here
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.wizName = name,
+    this.wizAge = age,
+    this.wizSpell = favoriteSpell
+  }
+castSpell() {
+  console.log(`${this.wizName} has cast ${this.wizSpell}`)
+}
+}
+let gryffindor = new Wizard("Harry", 17, "hocus pocus") 
 
+gryffindor.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
