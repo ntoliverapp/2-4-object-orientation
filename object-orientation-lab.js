@@ -92,8 +92,11 @@ var carDetails = {
 */
 
 //Code Here
-const {color, make, model, year} = carDetails 
-  console.log(carDetails)
+const {color: carColor} = carDetails; 
+const {make: carMake} = carDetails; 
+const {model: carModel} = carDetails; 
+const {year: carYear} = carDetails; 
+console.log(carColor, carMake, carModel, carYear); 
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -104,22 +107,15 @@ const {color, make, model, year} = carDetails
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj )//{
+function greeting( obj ){
+
   //Code Here
-  // const obj ={
-  //   title: "Mr",
-  //   firstName: "Bobby",
-  //   LastName: "Deere"
-  // }
-  const {title, firstName, LastName} = obj
+
+  const {title: nameOne, firstName: nameTwo, lastName: nameThree} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
-// }
-// obj["title"] = "Sr"
-// obj["firstName"] = "David"
-// obj["lastName"] = "Flank"
-// console.log(obj)
+}
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -134,6 +130,19 @@ function greeting( obj )//{
 
 //Code Here
 
+const states = {
+  utah: 1,
+  california: 2, 
+  texas: 3,
+  arizona: 4 
+}
+function totalPopulation(west){
+  const {utah: numberOne, california: numberTwo, texas:numberThree, arizona: numberFour} = west
+  var sum = numberOne + numberTwo + numberThree + numberFour
+  return sum
+}
+
+console.log(totalPopulation(states))
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
